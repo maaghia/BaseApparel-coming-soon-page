@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%)) ;
+}
+main{
+    width: 100%;
+}
+.logo{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.logo img{
+    width: 95px;
+}
+.pic-desktop{
+    display: none;
+}
+.pic-mobile {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.content h1{
+    font-size: 38px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    opacity: 80%;
+    padding: 20px;
+}
+.content span{
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+}
+.content p{
+    line-height: 20px;
+    font-size: 16px;
+    color: hsl(0, 36%, 70%);
+    opacity: 80%;
+    font-weight: 400;
+    padding: 5px 20px;
+}
+.email{
+    position: relative;
+    height: 70px;
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.email input{
+    position: relative;
+    border-radius: 30px;
+    padding-left: 1.4rem ;
+    color: hsl(0, 36%, 70%);
+    border: 1px solid hsl(0, 93%, 68%);
+    width: 290px;
+    height: 38px;
+    background-color: transparent;
+}
+.email button{
+    position: absolute;
+    padding: 9px 22px;
+    border-radius: 30px;
+    border: none;
+    right: 0;
+    background-image: linear-gradient(hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    cursor: pointer;
+ }
+input::placeholder{
+    color:hsl(0, 36%, 70%);
+}
+button:hover{
+    transform: translate(-1px);
+    box-shadow: 0 8px 12px rgba(182, 133, 255, .4);
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+.attribution a { 
+    color: hsl(0, 93%, 68%); 
+}
+.attribution-desktop{
+    
+    display: none;
+}
+
+@media screen and (min-width:900px) {
+    html{
+        height: 100%;
+    }
+    body{
+        height: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        }
+    .pic-desktop {
+        height: 100%;
+        display: contents;
+    }   
+    .pic-mobile img{
+        display: none;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        padding: 40px 200px;
+    }
+    .logo {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .content{
+        text-align: left;
+    }
+    .content h1{
+        font-size: 70px;
+        margin-top: 50px;
+        letter-spacing: 13px;
+    }
+    .content p{
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 40px;
+    }
+    .email{
+        height: 70px;
+        width: 500px;
+    }
+    .email input{
+        width: 500px;
+        height: 55px;
+        border: 1px solid hsl(0, 93%, 68%);
+    }
+    .email button{
+        position: absolute;
+        padding: 18px 38px;
+        border-radius: 30px;
+        border: none;
+        right: 0;
+     }
+     .attribution-desktop{
+        display: contents;
+        
+     }
+     .attribution-desktop span{
+        font-size: 13px; 
+        text-align: center; 
+        margin-top: 50px;
+    
+     }
+     .attribution-desktop a{
+        color: hsl(0, 93%, 68%);
+    }
+    footer{
+        display: none;
+    }
+}
