@@ -89,6 +89,19 @@ button:hover{
     transform: translate(-1px);
     box-shadow: 0 8px 12px rgba(182, 133, 255, .4);
 }
+.error-msg{
+    color:  hsl(0, 93%, 68%);
+    margin-top: 0px;
+    margin-top: 5px;
+    display:none;
+    
+}
+#error{
+    position: absolute;
+    top: 588px;
+    left: 235px;
+    display:none;
+}
 .attribution { 
     font-size: 11px; 
     text-align: center; 
@@ -125,7 +138,7 @@ button:hover{
     .card{
         display: flex;
         flex-direction: column;
-        padding: 40px 200px;
+        padding: 40px 100px;
     }
     .logo {
         width: 150px;
@@ -139,14 +152,14 @@ button:hover{
     }
     .content h1{
         font-size: 70px;
-        margin-top: 50px;
+        margin-top: 0px;
         letter-spacing: 13px;
     }
     .content p{
         font-size: 20px;
         line-height: 30px;
-        margin-top: 30px;
-        margin-bottom: 40px;
+        margin-top: 15px;
+        margin-bottom: 15px;
     }
     .email{
         height: 70px;
@@ -164,6 +177,19 @@ button:hover{
         border: none;
         right: 0;
      }
+     .error-msg{
+        color:  hsl(0, 93%, 68%);
+        margin-top: 0px;
+        margin-top: 5px;
+        display:none;
+        
+    }
+    #error{
+        position: absolute;
+        top: 540px;
+        left: 489px;
+        display:none;
+    }
      .attribution-desktop{
         display: contents;
         

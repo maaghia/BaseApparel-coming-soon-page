@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <script src="scripts.js"></script>
+  <script src="script.js" defer></script>
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
 </head>
@@ -25,14 +25,16 @@
           <h1><span>We're </span>coming soon</h1>
           <p>Hello fellow shoppers! We're currently building our new fashion store. 
             Add your email below to stay up-to-date with announcements and our launch deals.</p>
-          <div class="email">
-            <input type="email" placeholder="Email Address"> 
-            <button>
-              <img src="images/icon-arrow.svg" alt="icon-arrow">
+            <div class="email">
+              <input type="email" placeholder="Email Address"> 
+              <button>
+                <img src="images/icon-arrow.svg" alt="icon-arrow">
+              </button>
               
-            </button>
-          </div>
-          
+            </div>
+            
+            <img src="images/icon-error.svg" alt="icon-error" id="error">
+            <p class="error-msg">Please enter a valid email</p>
       </div>
       <p class="attribution-desktop">
         <span>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
